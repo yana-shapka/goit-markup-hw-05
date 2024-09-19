@@ -813,8 +813,6 @@ textarea:focus {
 }
 
 .checkbox-agreement {
-  display: flex;
-  gap: 8px;
   min-width: 338px;
   font-size: 12px;
   line-height: 1.17;
