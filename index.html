@@ -658,29 +658,24 @@
                 </svg>
               </div>
             </div>
-            <div class="form-item-wrapper"> 
+            <div class="form-comment-wrapper"> 
               <label for="user-comment" class="form-label">Comment</label>
-              <div class="input-wrapper">
                 <textarea
                   id="user-comment"
                   name="user-comment"
-                  class="form-input-text"
+                  class="form-input-comment"
                   placeholder="Text input"
                 ></textarea>
             </div>
-            </div>
               <div class="checkbox-wrapper">
-                <label for="user-privacy" class="checkbox-agreement">
                   <input
+                    id="user-privacy"
                     type="checkbox"
                     name="user-privacy"
-                    class="checkbox"
-                    id="user-privacy"
+                    class="visually-hidden"
                     value="true"
                   />
-                  I accept the terms and conditions of the
-                  <span class="privacy-policy">Privacy Policy</span>
-                </label>
+                  <label for="user-privacy" class="checkbox-agreement">I accept the terms and conditions of the</label>
               </div>
               <button class="btn form-button" type="submit">Send</button>
             </form>
