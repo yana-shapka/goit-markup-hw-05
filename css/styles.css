@@ -717,7 +717,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.5;
   color: var(--cl-secondary);
   text-align: center;
-  margin-top: 36px;
   margin-bottom: 16px;
   letter-spacing: 0.02em;
 }
@@ -834,13 +833,20 @@ textarea:focus {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  fill: transparent;
 }
 
-input[type="checkbox"]:checked .checkbox {
+.checkbox-icon {
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked +label  .checkbox {
   background-color: var(--cl-links);
   border: none;
   fill: var(--cl-background-light);
+}
+
+input[type="checkbox"]:checked +label  .checkbox-icon {
+  visibility: visible;
 }
 
 .privacy-policy {
@@ -862,7 +868,7 @@ input[type="checkbox"]:checked .checkbox {
   margin-top: 24px;
   letter-spacing: 0.04em;
   line-height: 1.5;
-  margin: 24px 95px 0px 95px;
+  margin: 0px 95px 0px 95px;
   font-weight: 500;
   background-color: var(--cl-accent);
   color: var(--cl-body);
